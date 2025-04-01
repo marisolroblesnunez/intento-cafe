@@ -1,0 +1,33 @@
+:root {
+    --white: white;
+    --dark:black;
+    --primary:#4A3F35;
+    --secundary:#D4A373;
+    --fondo:#FAF3E0;
+
+
+
+}
+.banner{
+    background-image: url(../img/backgroun-image.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color:var(--white) ;
+
+}
+.section-banner{
+    
+    text-align: center;
+    padding: 20rem;
+    
+}
+*{ box-sizing: border-box; 
+     }
+body{
+    background-color: var(--fondo);
+}
+
