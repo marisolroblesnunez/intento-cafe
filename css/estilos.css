@@ -5,8 +5,14 @@
     --secundary:#D4A373;
     --fondo:#FAF3E0;
 
-
-
+}
+*{ box-sizing: border-box; 
+    margin: 0;
+     }
+body{
+    background-color: var(--fondo);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
 }
 .banner{
     background-image: url(../img/backgroun-image.jpeg);
@@ -17,17 +23,96 @@
     display: flex;
     justify-content: center;
     color:var(--white) ;
-
+    border-radius: 3rem;
 }
 .section-banner{
     
     text-align: center;
-    padding: 20rem;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    line-height:10rem;
+ 
+    }
     
+    .section-banner p{
+        font-size: 2rem;
+    }
+
+.menu{
+
 }
-*{ box-sizing: border-box; 
-     }
-body{
-    background-color: var(--fondo);
+h2{
+    font-size: 3rem;
+    text-align: center;
+     padding-top: 50px;
+     padding-bottom: 20px;
+}
+h3{
+    font-size: 2rem;
+    text-align: left;
+margin-left: 1rem;
 }
 
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 5rem;
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 10rem;
+    
+    
+}
+@media(min-width:420px){
+   .container{
+        display: flex;
+        flex-direction: row;
+    }
+}
+.cafes img{
+
+    width: 100%;
+    
+    
+}
+.cafes p{
+margin-left: 1rem;
+}
+.cafes{
+    background-color: var(--white);
+    box-shadow: -11px 11px 15px -5px rgba(0,0,0,0.74);;border-radius: 3%;
+    overflow: hidden;
+    font-size: 2rem;
+    
+   
+}
+
+
+.formulario{
+    background-color: var(--secundary);
+    font-size: 2rem;
+    margin: 0 auto;
+    
+    
+}
+
+.inputs{
+    margin: 1rem;
+    padding: 1rem;
+    width: 800px;
+}
+
+.formulario legend{
+    font-size: 3rem;
+    text-align: center;
+    padding: 50px 20px;
+    font-weight: bold;
+    align-items: center;
+}

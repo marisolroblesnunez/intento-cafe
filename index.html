@@ -5,38 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe Aroma</title>
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="shortcut icon" href="img/favicon.ico"
+    <link rel="shortcut icon" href="img/favicon.ico">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="menu">
             <a href="#">Inicio</a>
             <a href="#">Menu</a>
             <a href="#">Contacto</a>
         </nav>
         <div class="banner">
-            <section class="section-banner">
+            <div class="section-banner">
                 <h1><b>Café Aroma</b></h1>
-                <br>
                 <p>Descubre el placer de un buen café</p>
-            </section>
+                </section>
+            </div>
         
         </div>
     </header>
     <main>
         <h2>Nuestros Favoritos</h2>
-        <img src="img/expreso.jpeg" alt="expreso">
-        <h2>Expresso</h2>
-        <p>Intenso y aromático, perfecto para los amantes del café fuerte.</p>
-        
-        <img src="img/capuchino.jpeg" alt="capuchino">
-        <h2>Cappuccino</h2>
-        <p>Equilibrio perfecto entre espresso, leche vaporizada y espuma.</p>
-
-        <img src="img/late.jpeg" alt="late">
-        <h2>Latte</h2>
-        <p>Suave y cremoso, ideal para quienes prefieren un café más ligero.</p>
+            <div class="container">
+                <section class="cafes">
+                    <img src="img/expreso.jpeg"alt="expreso">
+                    <h3>Expresso</h3>
+                    <p>Intenso y aromático, perfecto para los amantes del café fuerte.</p>
+                </section>
+                <section class="cafes">
+                    <img src="img/capuchino.jpeg" alt="capuchino">
+                    <h3>Cappuccino</h3>
+                    <p>Equilibrio perfecto entre espresso, leche vaporizada y espuma.</p>
+                </section>
+                <section class="cafes">
+                    <img src="img/late.jpeg" alt="late">
+                    <h3>Latte</h3>
+                    <p>Suave y cremoso, ideal para quienes prefieren un café más ligero.</p>
+                </section>
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+       <form class="formulario">
+        <legend>Contáctanos</legend>
+        <div class="inputs">
+
+            <div class="input">
+                <input type="text" placeholder="Nombre">
+
+            </div>
+            <div class=" input">
+                <input type="text"placeholder="email">
+                
+            </div>
+            <div class=" input">
+                <textarea placeholder="Mensaje"></textarea>
+                
+            </div>
+            <div class=" input">
+                <input type="submit" value="enviar">
+            </div>
+
+            </div>
+
+
+       </form>
+       &copy; 2024 Café Aroma. Todos los derechos reservados.
+    </footer>
 </body>
 </html>
