@@ -4,6 +4,7 @@
     --primary:#4A3F35;
     --secundary:#D4A373;
     --fondo:#FAF3E0;
+    --transparencia: rgb(0, 0, 0,0.8);
 
 }
 *{ box-sizing: border-box; 
@@ -16,6 +17,7 @@ body{
 }
 .banner{
     background-image: url(../img/backgroun-image.jpeg);
+    /* background-color:rgba(0,0,0,0.5); */
     background-repeat: no-repeat;
     background-size: cover ;
     height: 100vh;
@@ -23,8 +25,10 @@ body{
     display: flex;
     justify-content: center;
     color:var(--white) ;
-    border-radius: 3rem;
+    
+    background-color: var(--transparencia);
 }
+
 .section-banner{
     
     text-align: center;
@@ -35,6 +39,7 @@ body{
     align-items: center;
     font-size: 3rem;
     line-height:10rem;
+    
  
     }
     
@@ -43,12 +48,28 @@ body{
     }
 
 .menu{
-
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white);
+    padding: 1.3rem;
+}
+.menu a {
+    font-size: 1rem;
+    /* border:1px solid green; */
+    color: var(--secundarylight);
+    text-decoration: none;
+}
+    
+.menu a:hover{
+    color:var(--secundary);
+  
 }
 h2{
     font-size: 3rem;
     text-align: center;
-     padding-top: 50px;
+     padding-top: 5%;
      padding-bottom: 20px;
 }
 h3{
@@ -99,20 +120,47 @@ margin-left: 1rem;
     background-color: var(--secundary);
     font-size: 2rem;
     margin: 0 auto;
+   
     
     
 }
-
-.inputs{
-    margin: 1rem;
-    padding: 1rem;
+.input-textarea{
+    line-height: 2rem;
+    font-size: 6rem;
+   
+}
+ input[type="submit"]{
+ color: var(--white);
+    background-color: var(--primary);
     width: 800px;
 }
-
-.formulario legend{
-    font-size: 3rem;
+.inputs{
+    /* margin: 1rem;
+    padding: 1rem; */
+    
+    display: flex;
+    flex-direction: column;
+    
     text-align: center;
-    padding: 50px 20px;
+    align-items: center;
+
+}
+
+.formulario h4{
+   
+    text-align: center;
+    /* padding: 50px 10px; */
     font-weight: bold;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.piepagina{
+    color: var(--white);
+    background-color:var(--primary);
+    font-size: 2rem;
+}
+.piepagina img{
+    text-align: center;
     align-items: center;
 }
